@@ -57,3 +57,21 @@ document.getElementById("btn-parallelogram").addEventListener('click', function 
     displayTableData(objectName, parallelogramResult)
 })
 
+// Rhombus
+document.getElementById("btn-rhombus").addEventListener('click', function () {
+    serial += 1;
+    const objectName = document.getElementById('rhombus-object').innerText;
+    const rhombusDiagonalOne = getInputFieldValue('rhombus-base');
+    const rhombusDiagonalTwo = getInputFieldValue('rhombus-height');
+
+    if (isNaN(rhombusDiagonalOne) || isNaN(rhombusDiagonalTwo) || rhombusDiagonalOne < 1 || rhombusDiagonalTwo < 1) {
+        alert('Enter Value')
+        return;
+    }
+
+    getTextValueById('rhombus-display');
+
+    const rhombusResult = 0.5 * rhombusDiagonalOne * rhombusDiagonalTwo;
+    displayTableData(objectName, rhombusResult)
+})
+
