@@ -33,6 +33,7 @@
     <!-- Card Section -->
     <main>
         <section class=" mt-8 lg:px-12 gap-x-6 flex flex-col md:flex-row lg:flex-row">
+            <!-- Card Element Div -->
             <div class="calculation-cards w-[70%] bg-red-300 grid md:grid-cols-2 lg:grid-cols-3 gap-6 ">
                 <div
                     class="card w-64  bg-base-100 shadow-xl hover:bg-gradient-to-r from-teal-300 via-purple-200 to-lime-300 ">
@@ -40,17 +41,40 @@
                         <img src="images/triangle.png" alt="Shoes" class="rounded-xl h-28" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Triangle</h2>
-                        <p>Area(A) = 0.5 × b × h<span></span></p>
+                        <h2 id="triangle-object" class="card-title">Rectangle</h2>
+                        <p>Area(A) = <span id="triangle-display">0.5 × b × h</span></p>
                         <div class="flex gap-x-4">
-                            <input class="bg-[#F1F1F1] w-16" type="text"> cm <input class="bg-[#F1F1F1]  w-16" type=" ">
+                            <input id="triangle-base" class="bg-[#F1F1F1] w-16 text-center" type="text"> cm <input
+                                id="triangle-height" class="bg-[#F1F1F1]  w-16 text-center" type=" ">
                             cm
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary bg-[#1090D8] hover:bg-[#109afa] mt-4 w-56">Calculate</button>
+                            <button id="btn-triangle"
+                                class="btn btn-primary bg-[#1090D8] hover:bg-[#109afa] mt-4 w-56">Calculate</button>
                         </div>
                     </div>
                 </div>
+
+                <div
+                    class="card w-64  bg-base-100 shadow-xl hover:bg-gradient-to-r from-teal-300 via-purple-200 to-lime-300">
+                    <figure class="px-10 pt-10">
+                        <img src="images/rectangle.png" alt="Shoes" class="rounded-xl h-28" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 id="rectangle-object" class="card-title">Triangle</h2>
+                        <p>Area(A) = <span id="rectangle-display"> w × l </span></p>
+                        <div class="flex gap-x-4">
+                            <input id="rectangle-width" class="bg-[#F1F1F1] w-16" type=""> cm <input
+                                id="rectangle-length" class="bg-[#F1F1F1] w-16" type=" ">
+                            cm
+                        </div>
+                        <div class="card-actions">
+                            <button id="btn-rectangle"
+                                class="btn btn-primary bg-[#1090D8] hover:bg-[#109afa] mt-4 w-56">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
                 <div
                     class="card w-64  bg-base-100 shadow-xl hover:bg-gradient-to-r from-teal-300 via-purple-200 to-lime-300">
                     <figure class="px-10 pt-10">
@@ -68,23 +92,7 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    class="card w-64  bg-base-100 shadow-xl hover:bg-gradient-to-r from-teal-300 via-purple-200 to-lime-300">
-                    <figure class="px-10 pt-10">
-                        <img src="images/triangle.png" alt="Shoes" class="rounded-xl h-28" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h2 class="card-title">Triangle</h2>
-                        <p>Area(A) = 0.5 × b × h<span></span></p>
-                        <div class="flex gap-x-4">
-                            <input class="bg-[#F1F1F1] w-16" type="text"> cm <input class="bg-[#F1F1F1] w-16" type=" ">
-                            cm
-                        </div>
-                        <div class="card-actions">
-                            <button class="btn btn-primary bg-[#1090D8] hover:bg-[#109afa] mt-4 w-56">Calculate</button>
-                        </div>
-                    </div>
-                </div>
+
                 <div
                     class="card w-64  bg-base-100 shadow-xl hover:bg-gradient-to-r from-teal-300 via-purple-200 to-lime-300 ">
                     <figure class="px-10 pt-10">
@@ -102,6 +110,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div
                     class="card w-64  bg-base-100 shadow-xl hover:bg-gradient-to-r from-teal-300 via-purple-200 to-lime-300">
                     <figure class="px-10 pt-10">
@@ -125,19 +134,25 @@
 
             <!-- Result Display -->
 
+            <!-- use this in output  -->
+
             <div class="result-card bg-blue-300 w-full md:w-[10%] lg:w-[40%] mx-auto text-center">
                 <h1 class="text-3xl underline">Area Calculation</h1>
-                <table class="">
+                <table class="mt-4 w-full">
                     <tr class="items-center">
-                        <td>100</td>
-                        <td>200</td>
-                        <td>300</td>
+                        <!-- <td>2</td>
+                        <td>fe</td>
+                        <td>fe</td>
+                        <td><button>sd</button></td> -->
                     </tr>
+                    <tbody id="table-container">
+
+                    </tbody>
                 </table>
             </div>
         </section>
     </main>
-
+    <script src="JS/utility.js"></script>
     <script src="JS/app.js"></script>
 </body>
 
