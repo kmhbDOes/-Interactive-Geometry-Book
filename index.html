@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Geometry Book</title>
+    <!-- daisyUi, Tailwind added -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -29,70 +30,108 @@
         </div>
     </header>
 
-    <section class=" mt-8 lg:px-12 gap-x-6 flex flex-col md:flex-row lg:flex-row">
-        <div class="calculation-cards w-[70%] bg-red-300 grid md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-            <div class="card w-64 bg-base-100 shadow-xl ">
-                <figure class="px-10 pt-10">
-                    <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+    <!-- Card Section -->
+    <main>
+        <section class=" mt-8 lg:px-12 gap-x-6 flex flex-col md:flex-row lg:flex-row">
+            <div class="calculation-cards w-[70%] bg-red-300 grid md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+                <div class="card w-64  bg-base-100 shadow-xl ">
+                    <figure class="px-10 pt-10">
+                        <img src="images/triangle.png" alt="Shoes" class="rounded-xl h-28" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Triangle</h2>
+                        <p>Area(A) = 0.5 × b × h<span></span></p>
+                        <div class="flex gap-x-4">
+                            <input class="bg-[#F1F1F1] w-14" type="text"> cm <input class="bg-blue-100 w-14" type=" ">
+                            cm
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary bg-[#1090D8] hover:bg-[#109afa] mt-4 w-56">Calculate</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card w-64 bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                    <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                <div class="card w-64  bg-base-100 shadow-xl ">
+                    <figure class="px-10 pt-10">
+                        <img src="images/triangle.png" alt="Shoes" class="rounded-xl h-28" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Triangle</h2>
+                        <p>Area(A) = 0.5 × b × h<span></span></p>
+                        <div class="flex gap-x-4">
+                            <input class="bg-[#F1F1F1] w-14" type="text"> cm <input class="bg-[#F1F1F1] w-14" type=" ">
+                            cm
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary bg-[#1090D8] hover:bg-[#109afa] mt-4 w-56">Calculate</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card w-64 bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                    <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                <div class="card w-64  bg-base-100 shadow-xl ">
+                    <figure class="px-10 pt-10">
+                        <img src="images/triangle.png" alt="Shoes" class="rounded-xl h-28" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Triangle</h2>
+                        <p>Area(A) = 0.5 × b × h<span></span></p>
+                        <div class="flex gap-x-4">
+                            <input class="bg-[#F1F1F1] w-14" type="text"> cm <input class="bg-[#F1F1F1] w-14" type=" ">
+                            cm
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary bg-[#1090D8] hover:bg-[#109afa] mt-4 w-56">Calculate</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card w-64 bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                    <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                <div class="card w-64  bg-base-100 shadow-xl ">
+                    <figure class="px-10 pt-10">
+                        <img src="images/triangle.png" alt="Shoes" class="rounded-xl h-28" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Triangle</h2>
+                        <p>Area(A) = 0.5 × b × h<span></span></p>
+                        <div class="flex gap-x-4">
+                            <input class="bg-[#F1F1F1] w-14" type="text"> cm <input class="bg-[#F1F1F1] w-14" type=" ">
+                            cm
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary bg-[#1090D8] hover:bg-[#109afa] mt-4 w-56">Calculate</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                <div class="card w-64  bg-base-100 shadow-xl ">
+                    <figure class="px-10 pt-10">
+                        <img src="images/triangle.png" alt="Shoes" class="rounded-xl h-28" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Triangle</h2>
+                        <p>Area(A) = 0.5 × b × h<span></span></p>
+                        <div class="flex gap-x-4">
+                            <input class="bg-[#F1F1F1] w-14" type="text"> cm <input class="bg-[#F1F1F1] w-14" type=" ">
+                            cm
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary bg-[#1090D8] hover:bg-[#109afa] mt-4 w-56">Calculate</button>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="result-card bg-blue-300 w-full md:w-[10%] lg:w-[40%] mx-auto">
-            <h1 class="underline  text-3xl">Area Calculation</h1>
-            <table>
-                <tr class="">
-                    <td>100</td>
-                    <td>200</td>
-                    <td>300</td>
-                </tr>
-            </table>
-        </div>
-    </section>
 
+            </div>
+
+            <!-- Result Display -->
+
+            <div class="result-card bg-blue-300 w-full md:w-[10%] lg:w-[40%] mx-auto text-center">
+                <h1 class="text-3xl underline">Area Calculation</h1>
+                <table class="">
+                    <tr class="items-center">
+                        <td>100</td>
+                        <td>200</td>
+                        <td>300</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
 
     <script src="JS/app.js"></script>
 </body>
