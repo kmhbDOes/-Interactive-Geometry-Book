@@ -10,14 +10,13 @@ function getTextValueById(inputId) {
     return inputDisplay;
 }
 
-function displayTableData(nameOfP, priceOfP) {
+function displayTableData(valueOne, valueTwo) {
     const container = document.getElementById("table-container");
     const tr = document.createElement("tr");
     tr.innerHTML = `
-     
-    <td>${serial}</td>
-    <td>${nameOfP}</td>
-    <td>${priceOfP}<span>cm<sup>2</sup></span></td>
+       
+    <td>${serial}. ${valueOne}</td>
+    <td>${valueTwo}<span>cm<sup>2</sup></span></td>
      <td>
     <button class="btn btn-sm bg-[#1090D8]">Square</button>
     </td>
@@ -25,4 +24,11 @@ function displayTableData(nameOfP, priceOfP) {
   `;
     container.appendChild(tr);
     // document.getElementById("total-product").innerText = serial;
+}
+
+function validation(inputOne, inputTwo) {
+    if (isNaN(inputOne) || isNaN(inputTwo) || inputOne < 1 || inputTwo < 1) {
+        alert('Enter Value')
+        return;
+    }
 }
