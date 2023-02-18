@@ -9,27 +9,30 @@
     <!-- daisyUi, Tailwind added -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
     <style>
-        .card {
-            background-color: blanchedalmond;
-            ;
+        .card:hover {
+            background-color: rgb(255, 0, 0);
+            /* default red color */
+        }
+
+        .btn-res {
+            text-transform: lowercase;
         }
     </style>
-
 </head>
 
 <body>
 
     <header>
-        <div class="navbar bg-base-100 w-[90%] rounded-lg mx-auto mt-6 bg-[#AFDDF1] mt-4 ">
+        <div class="navbar bg-base-100 w-[93%] rounded-lg mx-auto mt-6 bg-[#AFDDF1] mt-4 ">
             <div class="flex-1">
                 <h1><span class=" text-3xl font-bold">Interactive</span> <br> <span class="text-2xl">Geometry
                         Book</span>
                 </h1>
             </div>
             <div class="flex-none">
-                <a href="blog.html"><button class="btn btn-square w-20 md:w-32 bg-[#1090D8] hover:bg-[#109afa]">
+                <a href="blog.html" target="_blank"><button
+                        class="btn btn-square w-20 md:w-32 bg-[#1090D8] hover:bg-[#109afa]">
                         Blog
                     </button></a>
 
@@ -42,8 +45,7 @@
         <section class=" mt-8 lg:px-12 gap-x-6 flex flex-col md:flex-row lg:flex-row">
             <!-- Card Element Div -->
             <div class="calculation-cards mx-auto md:w-[70%]  grid md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-                <div
-                    class="card w-64  bg-base-100 shadow-xl hover:bg-gradient-to-r from-teal-300 via-purple-200 to-lime-300 ">
+                <div class="card w-64  bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/triangle.png" alt="Shoes" class="rounded-xl h-28" />
                     </figure>
@@ -62,8 +64,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="card w-64  bg-base-100 shadow-xl hover:bg-gradient-to-r from-teal-300 via-purple-200 to-lime-300">
+                <div class="card w-64  bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/rectangle.png" alt="Shoes" class="rounded-xl h-28" />
                     </figure>
@@ -82,8 +83,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="card w-64  bg-base-100 shadow-xl hover:bg-gradient-to-r from-teal-300 via-purple-200 to-lime-300">
+                <div class="card w-64  bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl h-28" />
                     </figure>
@@ -102,8 +102,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="card w-64  bg-base-100 shadow-xl hover:bg-gradient-to-r from-teal-300 via-purple-200 to-lime-300">
+                <div class="card w-64  bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/rhombus.png" alt="Shoes" class="rounded-xl h-28" />
                     </figure>
@@ -142,8 +141,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="card w-64  bg-base-100 shadow-xl hover:bg-gradient-to-r from-teal-300 via-purple-200 to-lime-300">
+                <div class="card w-64  bg-base-100 shadow-xl ">
                     <figure class="px-10 pt-10">
                         <img src="images/ellipse.png" alt="Shoes" class="rounded-xl h-28" />
                     </figure>

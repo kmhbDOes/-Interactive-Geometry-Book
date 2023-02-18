@@ -9,11 +9,10 @@ document.getElementById("btn-triangle").addEventListener('click', function () {
     const triangleHeight = getInputFieldValue('triangle-height');
 
     if (isNaN(triangleBase) || isNaN(triangleHeight) || triangleBase < 0 || triangleHeight < 0) {
-        alert('Enter Value')
+        alert('Enter Valid Value')
         return;
     }
 
-    getTextValueById('triangle-display');
 
     const triangleResult = (0.5 * triangleBase * triangleHeight).toFixed(2);
 
@@ -28,11 +27,10 @@ document.getElementById("btn-rectangle").addEventListener('click', function () {
     const rectangleLength = getInputFieldValue('rectangle-length');
 
     if (isNaN(rectangleWidth) || isNaN(rectangleLength) || rectangleWidth < 0 || rectangleLength < 0) {
-        alert('Enter Value')
+        alert('Enter Valid Value')
         return;
     }
 
-    getTextValueById('rectangle-display');
 
     const rectangleResult = (rectangleWidth * rectangleLength).toFixed(2);
     displayTableData(objectName, rectangleResult)
@@ -46,11 +44,10 @@ document.getElementById("btn-parallelogram").addEventListener('click', function 
     const parallelogramHeight = getInputFieldValue('parallelogram-height');
 
     if (isNaN(parallelogramBase) || isNaN(parallelogramHeight) || parallelogramBase < 0 || parallelogramHeight < 0) {
-        alert('Enter Value')
+        alert('Enter Valid Value')
         return;
     }
 
-    getTextValueById('parallelogram-display');
 
     const parallelogramResult = (parallelogramBase * parallelogramHeight).toFixed(2);
     displayTableData(objectName, parallelogramResult)
@@ -64,11 +61,10 @@ document.getElementById("btn-rhombus").addEventListener('click', function () {
     const rhombusDiagonalTwo = getInputFieldValue('rhombus-d2');
 
     if (isNaN(rhombusDiagonalOne) || isNaN(rhombusDiagonalTwo) || rhombusDiagonalOne < 0 || rhombusDiagonalTwo < 0) {
-        alert('Enter Value')
+        alert('Enter Valid Value')
         return;
     }
 
-    getTextValueById('rhombus-display');
 
     const rhombusResult = (0.5 * rhombusDiagonalOne * rhombusDiagonalTwo).toFixed(2);
     displayTableData(objectName, rhombusResult)
@@ -83,15 +79,13 @@ document.getElementById("btn-pentagon").addEventListener('click', function () {
     const pentagonBase = getInputFieldValue('pentagon-base');
 
     if (isNaN(pentagonPerimeter) || isNaN(pentagonBase) || pentagonPerimeter < 0 || pentagonBase < 0) {
-        alert('Enter Value')
+        alert('Enter Valid Value')
         return;
     }
 
-    getTextValueById('pentagon-display');
 
     const pentagonResult = (0.5 * pentagonPerimeter * pentagonBase).toFixed(2);
     displayTableData(objectName, pentagonResult)
-    document.getElementById('pentagon-display').innerText = pentagonResult
 })
 
 // Ellipse
@@ -102,16 +96,11 @@ document.getElementById("btn-ellipse").addEventListener('click', function () {
     const ellipseB = getInputFieldValue('ellipse-b');
 
     if (isNaN(ellipseA) || isNaN(ellipseB) || ellipseA < 0 || ellipseB < 0) {
-        alert('Enter Value')
+        alert('Enter Valid Value')
         return;
     }
 
-    getTextValueById('ellipse-display');
-
-    // πab
     const π = 3.14;
     const ellipseResult = (π * ellipseA * ellipseB).toFixed(2);
     displayTableData(objectName, ellipseResult);
-    document.getElementById('ellipse-display').innerText = ellipseResult;
 })
-

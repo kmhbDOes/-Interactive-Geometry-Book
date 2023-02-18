@@ -4,11 +4,6 @@ function getInputFieldValue(elementID) {
     return elementConverted;
 }
 
-function getTextValueById(inputId) {
-    const inputDisplayString = document.getElementById(inputId).innerText;
-    inputDisplay = parseFloat(inputDisplayString);
-    return inputDisplay;
-}
 
 function displayTableData(valueOne, valueTwo) {
     const container = document.getElementById("table-container");
@@ -18,9 +13,26 @@ function displayTableData(valueOne, valueTwo) {
     <td class="text-left pl-5">${serial}. ${valueOne}</td>
     <td>${valueTwo}<span>cm<sup>2</sup></span></td>
      <td>
-    <button class="btn btn-sm bg-[#1090D8]">Convert To M<sup>2</sup> </button>
+    <button class="btn btn-res btn-sm bg-[#1090D8]">Convert To m<sup>2</sup> </button>
     </td>
   `;
 
     container.appendChild(tr);
 }
+
+const setBackgroundColor = (element, color) => {
+    element.style.backgroundColor = color;
+};
+
+const cards = document.getElementsByClassName('card');
+for (let i = 0; i < cards.length; i++) {
+    const defaultColor = cards[i].style.backgroundColor;
+    cards[i].addEventListener('mouseover', function () {
+        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        setBackgroundColor(this, '#' + randomColor);
+    });
+    cards[i].addEventListener('mouseout', function () {
+        setBackgroundColor(this, defaultColor);
+    });
+}
+
