@@ -24,10 +24,3 @@ function displayTableData(valueOne, valueTwo) {
 
     container.appendChild(tr);
 }
-
-function validation(inputOne, inputTwo) {
-    if (isNaN(inputOne) || isNaN(inputTwo) || inputOne < 1 || inputTwo < 1) {
-        alert('Enter Value')
-        return;
-    }
-}
