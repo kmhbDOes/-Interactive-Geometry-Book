@@ -148,14 +148,16 @@
                         <img src="images/ellipse.png" alt="Shoes" class="rounded-xl h-28" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Triangle</h2>
-                        <p>Area(A) = 0.5 × b × h<span></span></p>
+                        <h2 id="ellipse-object" class="card-title">Ellipse</h2>
+                        <p>Area(A) = <span id="ellipse-display">πab</span></p>
                         <div class="flex gap-x-4">
-                            <input class="bg-[#F1F1F1] w-16" type="text"> cm <input class="bg-[#F1F1F1] w-16" type=" ">
+                            <input id="ellipse-a" class="bg-[#F1F1F1] w-16" type="text"> cm <input id="ellipse-b"
+                                class="bg-[#F1F1F1] w-16" type=" ">
                             cm
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary bg-[#1090D8] hover:bg-[#109afa] mt-4 w-56">Calculate</button>
+                            <button id="btn-ellipse"
+                                class="btn btn-primary bg-[#1090D8] hover:bg-[#109afa] mt-4 w-56">Calculate</button>
                         </div>
                     </div>
                 </div>

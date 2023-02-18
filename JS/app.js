@@ -52,7 +52,7 @@ document.getElementById("btn-parallelogram").addEventListener('click', function 
 
     getTextValueById('parallelogram-display');
 
-    const parallelogramResult = parallelogramBase * parallelogramHeight;
+    const parallelogramResult = (parallelogramBase * parallelogramHeight).toFixed(2);
     displayTableData(objectName, parallelogramResult)
 })
 
@@ -70,7 +70,7 @@ document.getElementById("btn-rhombus").addEventListener('click', function () {
 
     getTextValueById('rhombus-display');
 
-    const rhombusResult = 0.5 * rhombusDiagonalOne * rhombusDiagonalTwo;
+    const rhombusResult = (0.5 * rhombusDiagonalOne * rhombusDiagonalTwo).toFixed(2);
     displayTableData(objectName, rhombusResult)
 })
 
@@ -89,17 +89,29 @@ document.getElementById("btn-pentagon").addEventListener('click', function () {
 
     getTextValueById('pentagon-display');
 
-    const pentagonResult = 0.5 * pentagonPerimeter * pentagonBase;
+    const pentagonResult = (0.5 * pentagonPerimeter * pentagonBase).toFixed(2);
     displayTableData(objectName, pentagonResult)
+    document.getElementById('pentagon-display').innerText = pentagonResult
+})
 
+// Ellipse
+document.getElementById("btn-ellipse").addEventListener('click', function () {
+    serial += 1;
+    const objectName = document.getElementById('ellipse-object').innerText;
+    const ellipseA = getInputFieldValue('ellipse-a');
+    const ellipseB = getInputFieldValue('ellipse-b');
 
-    function randomcolor() {
-        return Math.floor(Math.random() * 255);
+    if (isNaN(ellipseA) || isNaN(ellipseB) || ellipseA < 0 || ellipseB < 0) {
+        alert('Enter Value')
+        return;
     }
-    divElem.addEventListener('click', () => {
-        divElem.style.backgroundColor =
-            "rgba('+randomcolor()+','+randomcolor()+','+randomcolor()+'\)"
-    })
 
+    getTextValueById('ellipse-display');
+
+    // πab
+    const π = 3.14;
+    const ellipseResult = (π * ellipseA * ellipseB).toFixed(2);
+    displayTableData(objectName, ellipseResult);
+    document.getElementById('ellipse-display').innerText = ellipseResult;
 })
 
