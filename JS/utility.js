@@ -18,12 +18,11 @@ function displayTableData(valueOne, valueTwo) {
     <td>${serial}. ${valueOne}</td>
     <td>${valueTwo}<span>cm<sup>2</sup></span></td>
      <td>
-    <button class="btn btn-sm bg-[#1090D8]">Square</button>
+    <button class="btn btn-sm bg-[#1090D8]">Convert To <span>m<sup>2</sup></button>
     </td>
-
   `;
+
     container.appendChild(tr);
-    // document.getElementById("total-product").innerText = serial;
 }
 
 function validation(inputOne, inputTwo) {
