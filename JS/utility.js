@@ -1,9 +1,11 @@
+//  Get Input Field values
 function getInputFieldValue(elementID) {
     const element = document.getElementById(elementID).value;
-    const elementConverted = parseFloat(element);
+    const elementConverted = parseInt(element);
     return elementConverted;
 }
 
+// Display Table Data
 
 function displayTableData(valueOne, valueTwo) {
     const container = document.getElementById("table-container");
@@ -20,6 +22,7 @@ function displayTableData(valueOne, valueTwo) {
     container.appendChild(tr);
 }
 
+//  Background colour randomizer
 const setBackgroundColor = (element, color) => {
     element.style.backgroundColor = color;
 };
@@ -35,4 +38,3 @@ for (let i = 0; i < cards.length; i++) {
         setBackgroundColor(this, defaultColor);
     });
 }
-
