@@ -10,6 +10,13 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <style>
+        .card {
+            background-color: blanchedalmond;
+            ;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -116,21 +123,21 @@
                     </div>
                 </div>
 
-                <div
-                    class="card w-64  bg-base-100 shadow-xl hover:bg-gradient-to-r from-teal-300 via-purple-200 to-lime-300 ">
+                <div class="card w-64  bg-base-100 shadow-xl  ">
                     <figure class="px-10 pt-10">
                         <img src="images/pentagon.png" alt="Shoes" class="rounded-xl h-28" />
                     </figure>
-                    <div class="card-body items-center text-center">
+                    <div id="pnt" class="card-body items-center text-center">
                         <h2 id="pentagon-object" class="card-title">Pentagon</h2>
-                        <p>Area(A) = <span>0.5 × p × b</span></p>
+                        <p>Area(A) = <span id="pentagon-display">0.5 × p × b</span></p>
                         <div class="flex gap-x-4">
                             <input id="pentagon-perimeter" class="bg-[#F1F1F1] w-16" type="text"> cm <input
                                 id="pentagon-base" class="bg-[#F1F1F1] w-16" type=" ">
                             cm
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary bg-[#1090D8] hover:bg-[#109afa] mt-4 w-56">Calculate</button>
+                            <button id="btn-pentagon"
+                                class="btn btn-primary bg-[#1090D8] hover:bg-[#109afa] mt-4 w-56">Calculate</button>
                         </div>
                     </div>
                 </div>

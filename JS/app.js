@@ -15,10 +15,9 @@ document.getElementById("btn-triangle").addEventListener('click', function () {
 
     getTextValueById('triangle-display');
 
-    const triangleResult = 0.5 * triangleBase * triangleHeight;
+    const triangleResult = (0.5 * triangleBase * triangleHeight).toFixed(2);
 
     displayTableData(objectName, triangleResult)
-
 })
 
 // Rectangle
@@ -35,7 +34,7 @@ document.getElementById("btn-rectangle").addEventListener('click', function () {
 
     getTextValueById('rectangle-display');
 
-    const rectangleResult = rectangleWidth * rectangleLength;
+    const rectangleResult = (rectangleWidth * rectangleLength).toFixed(2);
     displayTableData(objectName, rectangleResult)
 })
 
@@ -92,5 +91,15 @@ document.getElementById("btn-pentagon").addEventListener('click', function () {
 
     const pentagonResult = 0.5 * pentagonPerimeter * pentagonBase;
     displayTableData(objectName, pentagonResult)
+
+
+    function randomcolor() {
+        return Math.floor(Math.random() * 255);
+    }
+    divElem.addEventListener('click', () => {
+        divElem.style.backgroundColor =
+            "rgba('+randomcolor()+','+randomcolor()+','+randomcolor()+'\)"
+    })
+
 })
 

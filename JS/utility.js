@@ -6,7 +6,7 @@ function getInputFieldValue(elementID) {
 
 function getTextValueById(inputId) {
     const inputDisplayString = document.getElementById(inputId).innerText;
-    inputDisplay = parseFloat(inputDisplayString).toFixed(2);
+    inputDisplay = parseFloat(inputDisplayString);
     return inputDisplay;
 }
 
