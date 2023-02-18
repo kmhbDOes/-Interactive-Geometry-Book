@@ -15,10 +15,10 @@ function displayTableData(valueOne, valueTwo) {
     const tr = document.createElement("tr");
     tr.innerHTML = `
        
-    <td>${serial}. ${valueOne}</td>
+    <td class="text-left pl-5">${serial}. ${valueOne}</td>
     <td>${valueTwo}<span>cm<sup>2</sup></span></td>
      <td>
-    <button class="btn btn-sm bg-[#1090D8]">Convert To <span>m<sup>2</sup></button>
+    <button class="btn btn-sm bg-[#1090D8]">Convert To M<sup>2</sup> </button>
     </td>
   `;
 
